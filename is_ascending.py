@@ -1,5 +1,8 @@
 def is_ascending(a):
-  pass
+  for num in range(1,len(a)):
+      if not a[num-1] <= a[num]:
+        return False;
+  return True;
 
 a1 = [1, 2, 3, 4, 8, 10];
 a2 = [1, 2, 3, 4, 8, 6, 10];
